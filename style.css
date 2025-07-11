@@ -1,0 +1,123 @@
+ :root {
+      --text-color: #525252;
+      --desc-color: #777;
+      --card-color: rgba(255, 255, 255, 0.164);
+      --border-color: #aaa;
+      --btn-black: black;
+      --btn-white: white;
+    }               
+
+    body.dark {
+        --text-color: #f9f9f9;
+        --card-color: rgba(255, 255, 255, 0.027);
+        background-image: url(/imagens/fundo_preto.svg);
+    }   
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/imagens/fundo_branco.svg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        color: var(--text-color);
+        font-family: 'Poppins';
+        font-weight: bolder;
+        text-align: center  ;
+        }
+
+    #logo{
+        width: 40px;
+    }   
+
+    #icon {
+        width: 50px;
+        cursor: pointer;
+    }
+    .theme {
+        background-color: transparent;
+        border: none;
+    }
+    header {
+        display:flex; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    nav {
+        background: var(--card-color);
+        padding: 8px 25px;
+        border-radius: 20px;    
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        margin-left: 14%;
+    }
+    nav a {
+        margin: 0 12px;
+        color: var(--text-color);
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 16px;    
+    }   
+
+    .right-buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .button-top-right {
+        padding: 6px 14px;
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .profilephoto {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 5px;
+    }
+
+     main {
+        margin-top: 15px;
+        padding: 2px;
+        min-height: 300px;
+    }   
+
+    .subtitle{
+        margin-inline: 20%;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .title{
+        margin-top: 10px;
+        margin-inline: 25%;
+        font-size: 35px; 
+        margin-bottom: 10px;
+    }
+
+    .description {
+        margin-top: 5px;
+        margin-inline: 28%;
+        font-size: 16px;
+        color: var(--text-color);
+        font-weight: normal;
+        margin-bottom: 3%;
+    }
+
+    .button-cv {
+        padding: 12px 28px;
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 20px;   
+     }
