@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <title>Gabriel | Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="/assets/imagens/icons/logo.png">
+</head>   
+
+<body>
+
+  <header class="animate__animated animate__bounceInDown">
+    <div class="logo"> <img id="logo" src="/assets/imagens/icons/logo_preta.svg" alt="logo"></div>
+
+    <nav>
+      <a onclick="changePage('home')">Inicio</a>
+      <a onclick="changePage('about-me')">Sobre mim</a>
+      <a onclick="changePage('projects')">Projetos</a>
+      <a onclick="changePage('contact')">Contate-me</a>
+    </nav>
+
+    <div class="right-buttons">
+      <button class="theme" onclick="changeTheme()">
+        <img id="icon" src="/assets/imagens/icons/moon.svg" alt="Ícone do tema" />
+      </button>
+      <a href="#" class="button-top-right">Contate-me ⬈ </a>
+    </div>
+  </header>
+
+  <!-- HOME -->
+  <main class="animate__animated animate__bounceInDown">
+    <section style="display: block;" id="home">
+      <img class="profilephoto" id="profile-photo" src="/assets/imagens/profile_branco.jpg" alt="profilephoto">
+      <p class="subtitle">Prazer, sou o Gabriel Gomes.</p>
+      <h1 class="title">Desenvolvedor frontend em formação, direto do Rio de Janeiro.</h1>
+      <p class="description">
+        Iniciando minha carreira como desenvolvedor frontend,
+        estudando e criando projetos próprios para ganhar experiência.
+      </p>
+      <div class="button-bottom">
+        <a href="/assets/pdfs/curriculo.pdf" target="_blank" class="button-cv">Meu cv <img
+            src="/assets/imagens/icons/download_preto.svg  " alt="icon-dowload"></a>
+      </div>
+    </section>
+
+    <!-- ABOUT-ME -->
+    <section style="display: none;" id="about-me">
+      <div class="head">
+        <p class="subtitle">Introdução</p>
+        <h1 class="main-title">Sobre mim</h1>
+        <p class="description">
+          Developer em formação, com foco em JavaScript. Em constante evolução,
+          estou em busca da minha primeira oportunidade como estagiário para aplicar e expandir meus conhecimentos.
+        </p>
+      </div>
+      <article class="card-aboutme">
+
+        <div class="card-info-group">
+          <div class="card-info">
+            <img id="icon-language" src="/assets/imagens/icons/language_preto.svg" alt="Language Icon">
+            <h2>Linguagens</h2>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+
+          <div class="card-info">
+            <img id="icon-college" src="/assets/imagens/icons/college_preto.svg" alt="college icon">
+            <h2>Cursando</h2>
+            <p>Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+          </div>
+
+          <div class="card-info">
+            <img id="icon-projects" src="/assets/imagens/icons/projects_preto.svg" alt="projects icon">
+            <h2>Projetos</h2>
+            <p>Alguns projetos desenvolvidos durante meus estudos e cursos.</p>
+          </div>
+        </div>
+      </article>
+      <p>Ferramentas que uso:</p>
+      <div class="card-tec">
+        <img src="/assets/imagens/icons/git_preto.svg" alt="">
+        <img src="/assets/imagens/icons/github_preto.svg" alt="">
+        <img src="/assets/imagens/icons/visual_preto.svg" alt="">
+        <img src="/assets/imagens/icons/figma_preto.svg" alt="">
+      </div>
+      </article>
+    </section>
+
+    <!--PROJECTS-->
+    <section style="display: none;" id="projects">
+      <p>Portfólio</p>
+      <h1>Meus Ultimos Projetos</h1>
+      <article>
+
+        <a class="projects-cards" id="card-imc" href="https://github.com/lairbag04/Calculator-IMC" target="_blank">
+          <img class="imc-img" src="/assets/imagens/IMC.png" alt="Projeto IMC">
+        </a>
+
+
+        <a class="projects-cards" id="card-tip" href="https://github.com/lairbag04/tip-calculator" target="_blank">
+          <img class="tip-img" src="/assets/imagens/tip.jpg" alt="Tip Calculator">
+        </a>
+
+        <div class="projects-cards card-cs">
+          <h2>Coming Soon</h2>
+          <p>Projeto em desenvolvimento...</p>
+        </div>
+      </article>
+    </section>
+
+    <!--CONTATE-ME-->
+    <section style="display: none;" id="contact">
+      <h1>Fale comigo</h1>
+      <form target="_blank" action="https://formsubmit.co/gabrielgomeseleven@gmail.com" method="POST" class="form-contato">
+        <input type="text" name="name" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+        <button class="submit" type="submit">Enviar</button>
+        <div class="logo-final">
+          <img id="logo" src="/assets/imagens/logo.png" alt="logo">
+        </div>
+      </form>
+      <footer class="rodape">
+        <img id="email_icon" src="/assets/imagens/icons/email_preto.svg" alt="icon-email">
+        <p>gabrielgomeseleven@gmail.com</p>
+      </footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
