@@ -14,13 +14,13 @@
      --card-color: rgba(255, 255, 255, 0.027);
      --btn-black: white;
      --bnt-text: black;
-     background-image: url(/assets/imagens/fundo_preto.svg);
+     background-image: url(assets/imagens/fundo_preto.svg);
  }  
 
  body {
      margin: 0;
      padding: 0;
-     background-image: url(/assets/imagens/fundo_branco.svg);
+     background-image: url(assets/imagens/fundo_branco.svg);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
